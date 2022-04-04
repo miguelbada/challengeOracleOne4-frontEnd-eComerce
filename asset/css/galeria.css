@@ -1,0 +1,58 @@
+.galeria {
+    background: #E5E5E5;
+    padding: 0 9.5rem;
+}
+
+.galeria__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.galeria__link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+}
+
+.galeria__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.galeria__info i {
+    padding-left: 12px;
+}
+
+.galeria__productos {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.galeria__productos___nombre {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.galeria__productos___precio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
