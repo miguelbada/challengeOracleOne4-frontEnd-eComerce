@@ -1,6 +1,8 @@
 .galeria {
     background: #E5E5E5;
-    padding: 0 9.5rem;
+    padding-top: 4rem;
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
 }
 
 .galeria__titulo {
@@ -25,7 +27,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4rem;
     padding-bottom: 1rem;
 }
 
@@ -48,7 +49,7 @@
     color: #464646;
 }
 
-.galeria__productos___precio {
+.galeria__productos___destacado {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;

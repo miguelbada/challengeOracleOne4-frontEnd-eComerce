@@ -1,0 +1,56 @@
+.info {
+    background: #EAF2FD;
+    padding: 4rem 9.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.info__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__formulario___nombre {
+    width: 35rem;
+    height: 3.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.info__formulario___mensaje {
+    width: 35rem;
+    height: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info__lista {
+    padding-bottom: 1.5rem;
+}
+
+.info__formulario___nombre::placeholder {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A2A2A2;
+}
+
+.info__formulario___mensaje::placeholder {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A2A2A2;
+}
