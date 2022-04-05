@@ -45,3 +45,9 @@
     width: 9.3rem;
     min-width: 9.3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .banner__text {
+        padding: 0 2rem;
+    }
+}

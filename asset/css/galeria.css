@@ -57,3 +57,19 @@
     line-height: 19px;
     color: #464646;
 }
+
+@media screen and (max-width: 768px) {
+    .galeria {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .galeria__imagen {
+        width: 164px;
+    }
+
+    .galeria__productos>ul:nth-last-child(-n+2) {
+        display: none;
+    }
+}

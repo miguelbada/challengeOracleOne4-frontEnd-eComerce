@@ -37,3 +37,22 @@
     color: #2A7AE4;
     background-color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .encabezado {
+        padding: 1rem 2rem;
+    }
+
+    .encabezado__container___busqueda {
+        width: 17rem;
+    }
+
+    .encabezado__logo {
+        /* width: 93px; */
+        height: 30px;
+    }
+
+    .encabezado__container {
+        gap: 1.5rem;
+    }
+}

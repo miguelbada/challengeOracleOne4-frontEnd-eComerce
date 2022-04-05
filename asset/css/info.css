@@ -3,7 +3,13 @@
     padding: 4rem 9.5rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+
+}
+
+.info__informacion {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info__text {
@@ -53,4 +59,27 @@
     font-size: 16px;
     line-height: 20px;
     color: #A2A2A2;
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        padding: 2rem 2rem;
+    }
+
+    .galeria__imagen {
+        width: 164px;
+        padding-bottom: 2rem;
+    }
+
+    .info__informacion {
+        flex-direction: column;
+    }
+
+    .info__formulario___nombre {
+        width: 27rem;
+    }
+
+    .info__formulario___mensaje {
+        width: 27rem;
+    }
 }
