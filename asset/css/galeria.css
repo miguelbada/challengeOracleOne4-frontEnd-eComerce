@@ -66,7 +66,7 @@
     color: #464646;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 767.98px) {
     .galeria {
         padding: 1rem;
     }
@@ -97,7 +97,7 @@
 
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1399.98px){
     .galeria {
         padding-top: 2rem;
         padding-left: 2rem;
@@ -111,4 +111,4 @@
     .galeria__productos>ul:nth-last-child(-n+2) {
         display: none;
     }
-} */
+}

@@ -62,7 +62,7 @@
     color: #A2A2A2;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 767.98px) {
     .info {
         flex-direction: column;
         padding: 1.5rem 1rem 1rem 1rem;
@@ -83,7 +83,7 @@
     }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1399.98px) {
     .info {
         padding: 2rem 2rem;
     }
@@ -104,4 +104,4 @@
     .info__formulario___mensaje {
         width: auto;
     }
-} */
+}

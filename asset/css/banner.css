@@ -46,7 +46,7 @@
     min-width: 9.3rem;
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width: 767.98px) {
     .banner__image {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../img/banner-celu.jpg);
         background-repeat: no-repeat;
@@ -78,8 +78,8 @@
     }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1399.98px) {
     .banner__text {
         padding: 0 2rem;
     }
-} */
+}
