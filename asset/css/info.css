@@ -98,10 +98,12 @@
     }
 
     .info__formulario___nombre {
-        width: auto;
+        width: 434px;
+        height: 56px;;
     }
 
     .info__formulario___mensaje {
-        width: auto;
+        width: 434px;
+        height: 56px;
     }
 }
