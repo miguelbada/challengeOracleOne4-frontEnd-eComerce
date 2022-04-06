@@ -21,7 +21,6 @@
 .encabezado__container___icono::placeholder {
     background-image: url(../img/busqueda-lupa.svg);
     background-repeat: no-repeat;
-    /* background-size: 15px 15px; */
     background-position: right center;
 }
 
@@ -38,7 +37,39 @@
     background-color: white;
 }
 
-@media screen and (max-width: 768px) {
+.encabezado__container___busqueda-icono {
+    display: none;
+}
+
+@media screen and (max-width: 440px) {
+    .encabezado {
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .encabezado__logo {
+        width: 93px;
+        height: 30px;
+    }
+
+    .encabezado__container___login {
+        width: 8rem;
+    }
+
+    .encabezado__container___busqueda {
+        display: none;
+    }
+
+    .encabezado__container___busqueda-icono {
+        display: block;
+        color: #464646;
+        width: 17px;
+        height: 17px;
+    }
+
+}
+
+/* @media screen and (max-width: 768px) {
     .encabezado {
         padding: 1rem 2rem;
     }
@@ -48,11 +79,11 @@
     }
 
     .encabezado__logo {
-        /* width: 93px; */
+        width: 93px;
         height: 30px;
     }
 
     .encabezado__container {
         gap: 1.5rem;
     }
-}
+} */

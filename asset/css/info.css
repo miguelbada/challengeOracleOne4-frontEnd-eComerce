@@ -41,6 +41,7 @@
 
 .info__lista {
     padding-bottom: 1.5rem;
+    color: #2A7AE4;
 }
 
 .info__formulario___nombre::placeholder {
@@ -61,7 +62,28 @@
     color: #A2A2A2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 440px) {
+    .info {
+        flex-direction: column;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .info__informacion {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__formulario___nombre {
+        width: auto;
+    }
+
+    .info__formulario___mensaje {
+        width: auto;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
     .info {
         padding: 2rem 2rem;
     }
@@ -76,10 +98,10 @@
     }
 
     .info__formulario___nombre {
-        width: 27rem;
+        width: auto;
     }
 
     .info__formulario___mensaje {
-        width: 27rem;
+        width: auto;
     }
-}
+} */

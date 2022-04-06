@@ -46,8 +46,40 @@
     min-width: 9.3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:440px) {
+    .banner__image {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../img/banner-celu.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner__titulo {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .banner__descripcion {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner__text {
+        padding-left: 1rem;
+    }
+
+    .banner__btn {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 1rem;
+        width: 133px;
+        height: 40px;
+        padding: 0.5rem;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
     .banner__text {
         padding: 0 2rem;
     }
-}
+} */
