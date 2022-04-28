@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asset/img/favicon.png">
     <title>AluraGeek</title>
 
     <!-- font gloogle -->
@@ -25,7 +26,7 @@
     <link rel="stylesheet" href="asset/css/info.css">
 </head>
 <body>
-    <head>
+    <header>
         <div class="encabezado">
             <div class="encabezado__container">
                     <img src="asset/img/Logo.svg" alt="logo de AluraGeek" class="encabezado__logo">
@@ -34,7 +35,7 @@
             <button class="encabezado__container___login">login</button>
             <i class="fa-solid fa-magnifying-glass encabezado__container___busqueda-icono"></i>
         </div> 
-    </head>
+    </header>
 
     <main>
         <div class="banner__image">
@@ -47,14 +48,14 @@
         <div class="galeria">
             <section>
                 <div class="galeria__info">
-                    <h1 class="galeria__titulo">star Wars</h1>
+                    <h1 class="galeria__titulo">Star Wars</h1>
                     <div>
                         <a href="#" class="galeria__link">ver todo</a>
                         <i class="fa fa-light fa-arrow-right galeria__link-flecha"></i>
                     </div>
                 </div>
-                <div class="galeria__productos">
-                    <ul>
+                <div class="galeria__productos galeria__productos___star-wars">
+                    <!-- <ul>
                         <img src="asset/img/star-wars/taza-star-wars.jpg" alt="taza-star-wars" class="galeria__imagen">
                         <h3 class="galeria__productos___nombre">Producto XYZ</h3>
                         <p class="galeria__productos___destacado">$ 60,00</p>
@@ -89,7 +90,7 @@
                         <h3 class="galeria__productos___nombre">Producto XYZ</h3>
                         <p class="galeria__productos___destacado">$ 60,00</p>
                         <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
+                    </ul> -->
                 </div>
             </section>
             <section>
@@ -217,5 +218,7 @@
             <p>2021</p>
         </section>
     </footer>
+
+    <script type="module" src="javaScrip/controller/getProductosController.js"></script>
 </body>
 </html>
