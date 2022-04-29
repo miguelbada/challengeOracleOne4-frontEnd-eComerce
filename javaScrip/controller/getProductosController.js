@@ -2,9 +2,21 @@ import getProductosService from '../service/getProductosService.js';
 
 async function getProductosController() {
     let productos = await getProductosService();
-    let container = document.querySelector('.galeria__productos___star-wars');
+
+    let starWars = productos.filter(producto => producto.categoria == "star-wars");
+    let consolas = productos.filter(producto => producto.categoria == "consolas");
+    let diversos = productos.filter(producto => producto.categoria == "diversos");
+
+    let containerStarWars = document.querySelector('.galeria__productos___star-wars');
+    let containerConsolas = document.querySelector('.galeria__productos___consolas');
+    let containerDiversos = document.querySelector('.galeria__productos___diversos');
     
-    container.innerHTML = renderProductos(productos);
+    containerStarWars.innerHTML = renderProductos(starWars);
+    containerConsolas.innerHTML = renderProductos(consolas);
+    containerDiversos.innerHTML = renderProductos(diversos);
+
+    console.log(productos);
+     
 }
 
 function renderProductos(listaProductos) {
@@ -18,24 +30,6 @@ function renderProductos(listaProductos) {
                                <a href="#" class="galeria__link">Ver producto</a>
                            </ul>`;
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /* 
-                            `<ul>
-                                <img src="${ producto.imagen }" alt="" class="container__imagen">
-                                <h3 class="container__nombre">${ producto.nombre }</h3>
-                                <p class="container__precio">$ ${ producto.precio }</p>
-                                <p class="container__descripcion">${ producto.descripcion }</p>
-                                <a href="#" class="galeria__link">Ver producto</a>
-                           </ul>`; */
-
         html += htmlSegment;
     });
     
