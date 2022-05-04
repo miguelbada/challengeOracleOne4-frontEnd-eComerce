@@ -13,10 +13,7 @@ async function getProductosController() {
     
     containerStarWars.innerHTML = renderProductos(starWars);
     containerConsolas.innerHTML = renderProductos(consolas);
-    containerDiversos.innerHTML = renderProductos(diversos);
-
-    console.log(productos);
-     
+    containerDiversos.innerHTML = renderProductos(diversos); 
 }
 
 function renderProductos(listaProductos) {

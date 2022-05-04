@@ -20,7 +20,6 @@ formulario.addEventListener('submit',async evento => {
     addProductoService(imagen(), nombre(), precio(), descripcion(), categoria());
 })
 
-
 function imagen() {
     return document.querySelector('[data-producto-imagen]').getAttribute('src');
 }

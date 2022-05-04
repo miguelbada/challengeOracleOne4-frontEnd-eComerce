@@ -2,6 +2,7 @@
     padding: 2rem 9.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .encabezado__container {
@@ -24,6 +25,17 @@
     background-position: right center;
 }
 
+.login-name {
+    display: block;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+
+}
+
 .encabezado__container___login {
     width: 11.375rem;
     height: 3.188rem;
@@ -35,6 +47,18 @@
     line-height: 19px;
     color: #2A7AE4;
     background-color: white;
+}
+
+.encabezado__container___sign-out {
+    display: none;
+    border: 1px solid #2A7AE4;
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    background-color: #2A7AE4;
 }
 
 .encabezado__container___busqueda-icono {

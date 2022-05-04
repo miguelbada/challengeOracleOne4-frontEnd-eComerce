@@ -4,7 +4,8 @@
   "description": "tienda virtual e-comerce",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app",
+    "start": "node app"
   },
   "repository": {
     "type": "git",

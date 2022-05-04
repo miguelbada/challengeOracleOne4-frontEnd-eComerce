@@ -144,5 +144,12 @@
       "id": "001307a2-b5fb-4b5f-9fc6-41a59c2550e2",
       "categoria": "diversos"
     }
+  ],
+  "usuarios": [
+    {
+      "email": "miguel@hotmail.com",
+      "password": "aaa",
+      "id": 2
+    }
   ]
 }

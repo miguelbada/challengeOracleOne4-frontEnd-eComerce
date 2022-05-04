@@ -39,10 +39,10 @@
         </div> 
     </header>
     <main>
-        <form action="#" class="login__form">
+        <form action="#" class="login__form" data-login-formulario>
             <h2 class="login__titulo">Iniciar Sesión</h2>
-            <input type="text" placeholder="Escriba su correo electronico" class="login__input">
-            <input type="text" placeholder="Escriba su contraseña" class="login__input">
+            <input type="text" placeholder="Escriba su correo electronico" class="login__input" data-login-email>
+            <input type="text" placeholder="Escriba su contraseña" class="login__input" data-login-password>
             <input type="submit" value="Entrar" class="login__btn">
         </form>
     </main>
@@ -73,5 +73,7 @@
             <p>2021</p>
         </section>
     </footer>
+
+    <script type="module" src="javaScrip/controller/signInUsuarioController.js"></script>
 </body>
 </html>

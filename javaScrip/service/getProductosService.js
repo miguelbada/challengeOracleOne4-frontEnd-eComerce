@@ -1,8 +1,9 @@
-import url from '../url.js'
+import url from '../url.js';
 
 async function getProductosService() {
+    let urlProducto = '/productos';
     try {
-        let res = await fetch(url);
+        let res = await fetch(url + urlProducto);
 
         return await res.json();
     } catch (error) {

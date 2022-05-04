@@ -1,9 +1,9 @@
 import url from '../url.js';
 
 async function addProductoService(imagen, nombre, precio, descripcion, categoria) {
-    
+    let urlProducto = '/productos';
     try {
-        let response = await fetch(url, {
+        let response = await fetch(url + urlProducto, {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
