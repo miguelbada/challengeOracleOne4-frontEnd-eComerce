@@ -30,26 +30,31 @@
     <header>
         <div class="encabezado">
             <div class="encabezado__container">
-                    <img src="asset/img/Logo.svg" alt="logo de AluraGeek" class="encabezado__logo">
+                    <a href="index.html?window.location.href"><img src="asset/img/Logo.svg" alt="logo de AluraGeek" class="encabezado__logo"></a>
                     <input type="search" placeholder="¿Qué deseas buscar?" class="encabezado__container___icono encabezado__container___busqueda">
             </div>
-            <button class="encabezado__container___login">login</button>
-            <i class="fa-solid fa-magnifying-glass encabezado__container___busqueda-icono"></i>
+            <div class="encabezado__container">
+                <a href="login.html"><button class="encabezado__container___login">login</button></a>
+                <h2 class="login-name"></h2>
+                <button class="encabezado__container___sign-out" data-sing-out>Sign out</button>
+                <i class="fa-solid fa-magnifying-glass encabezado__container___busqueda-icono"></i>
+            </div>
         </div> 
     </header>
     <main>
-        <div class="producto__conteiner">
-            <div class="producto__img"></div>
-            <h3 class="producto__nombre">Producto XYZ</h3>
-            <p class="producto__precio">$ 60,00</p>
-            <p class="producto__descripcion">Taza casco stormtrooper de 500ml.</p> 
+        <div class="producto__container">
+            <img src="" alt="imagen del producto" class="producto__img" data-producto-img>
+            <div>
+                <h3 class="producto__nombre" data-producto-nombre></h3>
+                <p class="producto__precio" data-producto-precio></p>
+                <p class="producto__descripcion" data-producto-descripcion></p> 
+            </div>
         </div>
-
         <div class="galeria">
             <section class="galeria__container">
                 <h2 class="galeria__titulo">Productos similares</h2>
-                <div class="galeria__productos___relacionados">
-                    <ul>
+                <div class="galeria__productos___relacionados" data-producto-relacionado>
+                    <!-- <ul>
                         <img src="asset/img/star-wars/taza-star-wars.jpg" alt="taza-star-wars" class="galeria__imagen">
                         <h3 class="galeria__productos___nombre">Producto XYZ</h3>
                         <p class="galeria__productos___destacado">$ 60,00</p>
@@ -84,7 +89,7 @@
                         <h3 class="galeria__productos___nombre">Producto XYZ</h3>
                         <p class="galeria__productos___destacado">$ 60,00</p>
                         <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
+                    </ul> -->
                 </div>
             </section>
     </main>
@@ -115,5 +120,10 @@
             <p>2021</p>
         </section>
     </footer>
+
+    <script type="module" src="javaScrip/controller/loginControler.js"></script>
+    <script type="module" src="javaScrip/controller/productoController.js"></script>
+    <script type="module" src="javaScrip/controller/signInUsuarioController.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

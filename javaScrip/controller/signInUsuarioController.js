@@ -4,7 +4,8 @@ let formulario = document.querySelector('[data-login-formulario]');
 
 formulario.addEventListener('submit', async e => {
     e.preventDefault();
-    verificarLogin(getEmail(), 'http://localhost:5500' + '/index.html');
+    verificarLogin(getEmail(), window.history.back());
+    /* 'http://localhost:5501' + '/index.html' */
 });
 
 function getEmail() {

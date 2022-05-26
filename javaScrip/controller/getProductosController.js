@@ -24,7 +24,7 @@ function renderProductos(listaProductos) {
                                <img src="${ producto.imagen }" alt="" class="galeria__imagen">
                                <h3 class="galeria__productos___nombre">${ producto.nombre }</h3>
                                <p class="galeria__productos___destacado">$ ${ producto.precio }</p>
-                               <a href="#" class="galeria__link">Ver producto</a>
+                               <a href="./producto.html?id=${ producto.id }" class="galeria__link">Ver producto</a>
                            </ul>`;
         
         html += htmlSegment;
@@ -34,3 +34,6 @@ function renderProductos(listaProductos) {
 }
 
 getProductosController();
+
+
+export default renderProductos;

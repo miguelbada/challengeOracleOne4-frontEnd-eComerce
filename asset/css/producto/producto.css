@@ -1,30 +1,27 @@
-.producto__conteiner {
+.producto__container {
     background: #E5E5E5;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 4rem 9.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .producto__img {
-    height: 12rem;
-    width: 22rem;
-    margin: auto;
-    /* background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; */
-
+    /* width: 560px; */
+    height: 403px;
+    /* margin: auto;
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;
-    background-image: url(/asset/img/star-wars/taza-star-wars.jpg);
+    background-image: url(/asset/img/star-wars/taza-star-wars.jpg); */
 }
 
 .producto__nombre {
-    padding-top: 1rem;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 52px;
+    line-height: 61px;
     color: #464646;
 }
 
@@ -40,12 +37,11 @@
 }
 
 .producto__descripcion {
-    padding-bottom: 1rem;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 19px;
     color: #464646;
 }
 
@@ -60,6 +56,6 @@
     align-items: center;
 }
 
-.galeria__productos___relacionados>ul:nth-last-child(-n+2) {
+/* .galeria__productos___relacionados>ul:nth-last-child(-n+2) {
     display: none;
-}
+} */

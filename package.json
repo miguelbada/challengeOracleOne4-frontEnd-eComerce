@@ -1,24 +1,19 @@
 {
   "name": "challengeoracleone4-frontend-ecomerce",
   "version": "1.0.0",
-  "description": "tienda virtual e-comerce",
+  "description": "E-comerce",
   "main": "index.html",
   "scripts": {
-    "dev": "nodemon app",
-    "start": "node app"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miguelbada/challengeOracleOne4-frontEnd-eComerce.git"
   },
-  "author": "Miguel Enrique Bada",
+  "author": "Bada Miguel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/miguelbada/challengeOracleOne4-frontEnd-eComerce/issues"
   },
-  "homepage": "https://github.com/miguelbada/challengeOracleOne4-frontEnd-eComerce#readme",
-  "type": "module",
-  "dependencies": {
-    "uuid": "^8.1.0"
-  }
+  "homepage": "https://github.com/miguelbada/challengeOracleOne4-frontEnd-eComerce#readme"
 }
