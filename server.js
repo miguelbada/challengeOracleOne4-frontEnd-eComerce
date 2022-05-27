@@ -13,8 +13,8 @@ server.listen(port, () => {
     console.log(`JSON Server is running on port ${port}`)
 });
 
-server.use(express.static('client/build'));
+/* server.use(express.static('client/build'));
 
 server.get('*', (req,res) => {
 res.sendFile(path.resolve(__dirname, 'client/build', 'index.php'))
-});
+}); */
