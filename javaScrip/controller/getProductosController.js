@@ -20,7 +20,7 @@ function renderProductos(listaProductos) {
     let html = '';
 
     listaProductos.forEach(producto => {
-        let htmlSegment = `<ul>
+        let htmlSegment = `<ul class="galeria__productos___lista">
                                <img src="${ producto.imagen }" alt="" class="galeria__imagen">
                                <h3 class="galeria__productos___nombre">${ producto.nombre }</h3>
                                <p class="galeria__productos___destacado">$ ${ producto.precio }</p>

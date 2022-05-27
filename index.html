@@ -26,20 +26,8 @@
     <link rel="stylesheet" href="asset/css/info.css">
 </head>
 <body>
-    <header>
-        <div class="encabezado">
-            <div class="encabezado__container">
-                    <a href="index.html"><img src="asset/img/Logo.svg" alt="logo de AluraGeek" class="encabezado__logo"></a>
-                    <input type="search" placeholder="¿Qué deseas buscar?" class="encabezado__container___icono encabezado__container___busqueda">
-            </div>
-            <div class="encabezado__container">
-                <a href="login.html"><button class="encabezado__container___login">login</button></a>
-                <h2 class="login-name"></h2>
-                <button class="encabezado__container___sign-out" data-sing-out>Sign out</button>
-                <i class="fa-solid fa-magnifying-glass encabezado__container___busqueda-icono"></i>
-            </div>
-        </div> 
-    </header>
+    
+    <header-component></header-component>
 
     <main>
         <div class="banner__image">
@@ -54,12 +42,12 @@
                 <div class="galeria__info">
                     <h1 class="galeria__titulo">Star Wars</h1>
                     <div>
-                        <a href="#" class="galeria__link">ver todo</a>
+                        <a href="listaProductos.html" class="galeria__link">ver todo</a>
                         <i class="fa fa-light fa-arrow-right galeria__link-flecha"></i>
                     </div>
                 </div>
                 <div class="galeria__productos galeria__productos___star-wars">
-                    <!-- <ul>
+                    <!-- <ul class="galeria__productos___lista">
                         <img src="asset/img/star-wars/taza-star-wars.jpg" alt="taza-star-wars" class="galeria__imagen">
                         <h3 class="galeria__productos___nombre">Producto XYZ</h3>
                         <p class="galeria__productos___destacado">$ 60,00</p>
@@ -101,7 +89,7 @@
                 <div class="galeria__info">
                     <h1 class="galeria__titulo">Consolas</h1>
                     <div>
-                        <a href="#" class="galeria__link">ver todo</a>
+                        <a href="listaProductos.html" class="galeria__link">ver todo</a>
                         <i class="fa fa-light fa-arrow-right galeria__link-flecha"></i>
                     </div>
                 </div>
@@ -148,7 +136,7 @@
                 <div class="galeria__info">
                     <h1 class="galeria__titulo">Diversos</h1>
                     <div>
-                        <a href="#" class="galeria__link">ver todo</a>
+                        <a href="listaProductos.html" class="galeria__link">ver todo</a>
                         <i class="fa fa-light fa-arrow-right galeria__link-flecha"></i>
                     </div>
                 </div>
@@ -195,36 +183,13 @@
         
     </main>
 
-    <footer>
-        <section class="info">
-            <div class="info__informacion">
-                <img src="asset/img/Logo.svg" alt="logo de AluraGeek" class="galeria__imagen">
-                <ul class="info__text">
-                    <li class="info__lista"><a href="#">Quienes somos</a></li>
-                    <li class="info__lista"><a href="#">Política de privacidad</a></li>
-                    <li class="info__lista"><a href="#">Programa de fidelidad</a></li>
-                    <li class="info__lista"><a href="#">Nuestras Tiendas</a></li>
-                    <li class="info__lista"><a href="#">Quiero ser franquiciado</a></li>
-                    <li class="info__lista"><a href="#">Anúncie aquí</a></li>
-                </ul>
-            </div>
-            <div class="info__informacion___formulario">
-                <form class="info__formulario">
-                    <label for="nombre" class="galeria__productos___destacado">Hable con nosotros</label>
-                    <input type="text" placeholder="Nombre" name="nombre" class="info__formulario___nombre">
-                    <input type="text" placeholder="Escribe tu mensaje" class="info__formulario___mensaje">
-                    <button class="banner__btn">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
-        <section class="pie-de-pagina">
-            <p>Desarrollado por Miguel Bada</p>
-            <p>2021</p>
-        </section>
-    </footer>
+    <footer-component></footer-component>
 
-    <script type="module" src="javaScrip/controller/getProductosController.js"></script>
-    <script type="module" src="javaScrip/controller/loginControler.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="javaScrip/controller/getProductosController.js"></script>
+    <script type="module" src="javaScrip/components/header.js"></script>
+    <script type="module" src="javaScrip/components/footer.js"></script>
+    <script type="module" src="javaScrip/controller/loginControler.js"></script>
+    <script type="module" src="javaScrip/controller/signInUsuarioController.js"></script>
 </body>
 </html>

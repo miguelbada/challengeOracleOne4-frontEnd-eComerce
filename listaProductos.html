@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/asset/img/favicon.png">
     <title>productos</title>
+    <!-- font gloogle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- reset default style -->
+    <link rel="stylesheet" href="asset/css/reset.css">
+
+    <link rel="stylesheet" href="asset/css/body.css">
+    <link rel="stylesheet" href="asset/css/encabezado.css">
+    <link rel="stylesheet" href="asset/css/banner.css">
+    <link rel="stylesheet" href="asset/css/pieDePagina.css">
+    <link rel="stylesheet" href="asset/css/galeria.css">
+    <link rel="stylesheet" href="asset/css/info.css">
 </head>
 <body>
-    <div class="container">
-        
-    </div>
+
+    <header-component></header-component>
+
+    <main class="galeria__container-all">
+        <div class="galeria__titulo-principal">
+            <h1 class="galeria__titulo">Todos los productos</h1>
+            <button class="galeria__btn">Agregar producto</button>
+        </div>
+        <div class="container container__lista___productos">
+            
+        </div>
+    </main>
+    
+    <footer-component></footer-component>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="javaScrip/controller/getAllProductosController.js"></script>
+    <script type="module" src="javaScrip/components/header.js"></script>
+    <script type="module" src="javaScrip/components/footer.js"></script>
+    <script type="module" src="javaScrip/controller/loginControler.js"></script>
+    <script type="module" src="javaScrip/controller/signInUsuarioController.js"></script>
 </body>
 
-<script type="module" src="javaScrip/controller/getProductosController.js"></script>
 </html>
