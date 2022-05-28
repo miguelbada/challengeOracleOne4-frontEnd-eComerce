@@ -4,23 +4,23 @@ let formulario = document.querySelector('[data-login-formulario]');
 console.log(window.location.href);
 formulario.addEventListener('submit', async e => {
     e.preventDefault();
-    /* let usuarioVerificado = await verificarUsuario(getEmail());
+    let usuarioVerificado = await verificarUsuario(getEmail());
     let usuarioLogin = usuarioVerificado[1];
     if(usuarioLogin) {
         let usuario = usuarioVerificado[0];
         console.log(window.history.back());
         localStorage.setItem('usuario', JSON.stringify(usuario));
         alert("Bienvenido " + getEmail());
-        window.location.assign('http://127.0.0.1:5501/index.html');
+        window.location.assign('https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce');
     } else {
         alert("El usuario o la contraseña es incorrecta");
     } 
-    https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce/
-    */
+   
+   
 
     
    
-    verificarLogin(getEmail(), 'https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce');
+    /* verificarLogin(getEmail(), 'https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce'); */
 });
 
 function getEmail() {
