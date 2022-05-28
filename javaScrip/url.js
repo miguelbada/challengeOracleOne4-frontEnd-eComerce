@@ -1,3 +1,3 @@
-let url = 'http://localhost:3000';
+let url = 'https://challenge-oracle-one-e-comerce.herokuapp.com';
 
 export default url;

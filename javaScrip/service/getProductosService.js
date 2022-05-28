@@ -3,7 +3,7 @@ import url from '../url.js';
 async function getProductosService() {
     let urlProducto = '/productos';
     try {
-        let res = await fetch('https://challenge-oracle-one-e-comerce.herokuapp.com' + urlProducto);
+        let res = await fetch(url + urlProducto);
 
         return await res.json();
     } catch (error) {
