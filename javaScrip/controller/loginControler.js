@@ -1,8 +1,9 @@
 let loginName = document.querySelector('.login-name');
-let usuario = JSON.parse(localStorage.getItem('usuario'))[0];
 
 function login() {
-    if(usuario) {
+    if(localStorage.getItem("usuario") != null) {
+        let usuario = JSON.parse(localStorage.getItem('usuario'))[0];
+
         $('.login-name').css('display', 'block');
         $('.encabezado__container___sign-out').css('display', 'block');
         loginName.textContent = usuario.email;

@@ -1,11 +1,24 @@
 import getUsuarioService from '../service/getUsuarioService.js';
 
 let formulario = document.querySelector('[data-login-formulario]');
-
+console.log(window.location.href);
 formulario.addEventListener('submit', async e => {
     e.preventDefault();
-    verificarLogin(getEmail(), window.history.back());
-    /* 'http://localhost:5501' + '/index.html' */
+    /* let usuarioVerificado = await verificarUsuario(getEmail());
+    let usuarioLogin = usuarioVerificado[1];
+    if(usuarioLogin) {
+        let usuario = usuarioVerificado[0];
+        console.log(window.history.back());
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+        alert("Bienvenido " + getEmail());
+        window.location.assign('http://127.0.0.1:5501/index.html');
+    } else {
+        alert("El usuario o la contraseña es incorrecta");
+    } */
+
+    
+   
+    verificarLogin(getEmail(), 'http://127.0.0.1:5501/index.html');
 });
 
 function getEmail() {
@@ -16,29 +29,35 @@ function getPassword() {
     return document.querySelector('[data-login-password]').value;
 }
 
-async function verificarUsuario(email) {
+async function verificarUsuario(emailUsuario) {
     try {
-        let usuarioRegistrado = await getUsuarioService(email);
+        let usuarioRegistrado = await getUsuarioService(emailUsuario);
         let usuario = usuarioRegistrado[0];
-        let verificacion = (usuario != undefined) && (usuario.email == email) && (usuario.password == getPassword());
+        let verificacion = (usuario != undefined) && (usuario.email == emailUsuario) && (usuario.password == getPassword());
         
         return [usuarioRegistrado, verificacion];
     } catch (error) {
-        console.log(error);
+        console.log("No se pudo verificar el usuario",error);
     } 
 }
 
-async function verificarLogin(email, url) {
-    let usuarioVerificado = await verificarUsuario(email);
-    let usuario = usuarioVerificado[0];
-    let usuarioLogin = usuarioVerificado[1];
-    console.log(usuarioVerificado);
-    
-    if(usuarioLogin) {
-        localStorage.setItem('usuario', JSON.stringify(usuario));
-        alert("Bienvenido " + getEmail());
-        window.location.replace(url);
-    } else {
-        alert("El usuario o la contraseña es incorrecta");
+async function verificarLogin(emailVerificado, urlBack) {
+    try {
+        let usuarioVerificado = await verificarUsuario(emailVerificado);
+        let usuarioLogin = usuarioVerificado[1];
+        
+        if(usuarioLogin) {
+            let usuarioLogin = usuarioVerificado[0];
+
+            localStorage.setItem('usuario', JSON.stringify(usuarioLogin));
+            alert("Bienvenido " + getEmail());
+            window.location.replace(urlBack);
+        } else {
+            alert("El usuario o la contraseña es incorrecta");
+        }
+    } catch (error) {
+        console.log("Se produjo un error al verificar el login", error);
     }
+    
+
 }
