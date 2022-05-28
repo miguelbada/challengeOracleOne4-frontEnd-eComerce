@@ -14,11 +14,13 @@ formulario.addEventListener('submit', async e => {
         window.location.assign('http://127.0.0.1:5501/index.html');
     } else {
         alert("El usuario o la contraseña es incorrecta");
-    } */
+    } 
+    https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce/
+    */
 
     
    
-    verificarLogin(getEmail(), 'http://127.0.0.1:5501/index.html');
+    verificarLogin(getEmail(), window.history.back());
 });
 
 function getEmail() {
