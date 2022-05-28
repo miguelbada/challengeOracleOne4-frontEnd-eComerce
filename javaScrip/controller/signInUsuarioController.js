@@ -20,7 +20,7 @@ formulario.addEventListener('submit', async e => {
 
     
    
-    verificarLogin(getEmail(), window.history.back());
+    verificarLogin(getEmail(), 'https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce');
 });
 
 function getEmail() {
