@@ -1,29 +1,33 @@
 .add-producto {
     background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .add-producto__titulo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 32px;
+    line-height: 38px;
     color: #464646;
-    padding: 1rem;
+    padding-top: 4rem;
 }
 
 .add-producto__form {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    margin-left: 1rem;
-    margin-right: 1rem;
-    /* gap: 1rem; */
-    padding-bottom: 1rem;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    width: 35rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .add-producto__imagen {
-    position: static;
+    /* position: static; */
     width: 100%;
     height: 134px;
     background: #FFFFFF;
@@ -38,7 +42,7 @@
     max-height: 134px;
 }
 
-[contentEditable=true]:empty:not(:focus):before{
+[contentEditable=true]:empty:not(:focus):before {
     content:attr(placeholder)
 }
 
@@ -59,10 +63,8 @@
 }
 
 .add-producto__categoria {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    /* gap: 1rem; */
-    padding-bottom: 1rem;
 }
 
 /* .add-producto__img-info {
@@ -75,9 +77,9 @@
 } */
 
 .add-producto__input {
-    display: inline-block;
-    width: calc(100% - 8px);
-    margin-bottom: 1rem;
+    /* display: inline-block; */
+    /* width: calc(100% - 8px); */
+    width: 100%;
 }
 
 .add-producto__input::placeholder {
@@ -90,8 +92,7 @@
 }
 
 .add-producto__input___info {
-    height: 43px;
-    padding-top: 8px;
+    height: 3.5rem;
 }
 
 .add-producto__input___info::placeholder {
@@ -100,8 +101,7 @@
 }
 
 .add-producto__input___descripcion {
-    height: 61px;
-    padding-top: 16px;
+    height: 5rem;
 }
 
 .add-producto__input___descripcion::placeholder {
@@ -120,9 +120,9 @@
 }
 
 .add-producto__btn {
-    position: static;
     width: 100%;
-    height: 51px;
+    display: flex;
+    padding: 1rem;
     background: #2A7AE4;
     font-family: 'Raleway';
     font-style: normal;
@@ -130,4 +130,5 @@
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    justify-content: center;
 }

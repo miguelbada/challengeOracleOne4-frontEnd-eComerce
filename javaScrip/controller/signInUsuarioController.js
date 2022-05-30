@@ -1,7 +1,7 @@
 import getUsuarioService from '../service/getUsuarioService.js';
 
 let formulario = document.querySelector('[data-login-formulario]');
-/* console.log(window.location.href); */
+
 formulario.addEventListener('submit', async e => {
     e.preventDefault();
     let usuarioVerificado = await verificarUsuario(getEmail());
@@ -11,15 +11,10 @@ formulario.addEventListener('submit', async e => {
 
         localStorage.setItem('usuario', JSON.stringify(usuario));
         alert("Bienvenido " + getEmail());
-        window.location.reload(); 
-        /* window.location.assign('https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce/index.html'); */
+        location.reload(); 
     } else {
         alert("El usuario o la contraseña es incorrecta");
     } 
-   
-   
-
-    
    
     /* verificarLogin(getEmail(), 'https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce'); */
 });
