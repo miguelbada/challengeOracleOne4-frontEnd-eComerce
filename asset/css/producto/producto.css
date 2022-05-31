@@ -7,13 +7,11 @@
 }
 
 .producto__img {
-    /* width: 560px; */
+    width: 560px;
     height: 403px;
-    /* margin: auto;
     background-position: center;
 	background-attachment: contain;
 	background-size: cover;
-    background-image: url(/asset/img/star-wars/taza-star-wars.jpg); */
 }
 
 .producto__nombre {

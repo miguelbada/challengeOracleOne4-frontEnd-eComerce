@@ -11,13 +11,14 @@ let precio = document.querySelector('[data-producto-precio]');
 let descripcion = document.querySelector('[data-producto-descripcion]');
 let productosRelacionados = document.querySelector('[data-producto-relacionado]');
 
-imagen.src = producto.imagen;
 imagen.classList.add('producto__img');
+imagen.setAttribute('style', `background-image: url(${ producto.imagen })`);
+console.log("set atribute");
 
 nombre.innerHTML = producto.nombre;
 nombre.classList.add('producto__nombre');
 
-precio.innerHTML = producto.precio;
+precio.innerHTML = "$ " + producto.precio;
 precio.classList.add('producto__precio');
 
 descripcion.innerHTML = producto.descripcion;

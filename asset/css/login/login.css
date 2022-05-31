@@ -51,3 +51,12 @@
     color: #FFFFFF;
 }
 
+.login__volver {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2A7AE4;
+}
+

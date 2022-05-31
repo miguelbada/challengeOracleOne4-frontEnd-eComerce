@@ -11,12 +11,12 @@ formulario.addEventListener('submit', async e => {
 
         localStorage.setItem('usuario', JSON.stringify(usuario));
         alert("Bienvenido " + getEmail());
-        location.reload(); 
+        let urlActual = window.location.href;
+        window.location.replace(urlActual);
+        /* location.reload(); */ 
     } else {
         alert("El usuario o la contraseña es incorrecta");
     } 
-   
-    /* verificarLogin(getEmail(), 'https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce'); */
 });
 
 function getEmail() {

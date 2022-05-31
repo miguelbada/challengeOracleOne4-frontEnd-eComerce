@@ -20,12 +20,12 @@ function renderProductos(listaProductos) {
     let html = '';
 
     listaProductos.forEach(producto => {
-        let htmlSegment = `<ul class="galeria__productos___lista">
-                               <img src="${ producto.imagen }" alt="" class="galeria__imagen">
-                               <h3 class="galeria__productos___nombre">${ producto.nombre }</h3>
-                               <p class="galeria__productos___destacado">$ ${ producto.precio }</p>
-                               <a href="./producto.html?id=${ producto.id }" class="galeria__link">Ver producto</a>
-                           </ul>`;
+        let htmlSegment = ` <ul class="galeria__productos___lista">
+                                <div class="galeria__imagen-background galeria__imagen" style='background-image: url("${ producto.imagen }");'></div>
+                                <h3 class="galeria__productos___nombre">${ producto.nombre }</h3>
+                                <p class="galeria__productos___destacado">$ ${ producto.precio }</p>
+                                <a href="./producto.html?id=${ producto.id }" class="galeria__link">Ver producto</a>
+                            </ul>`;
         
         html += htmlSegment;
     });

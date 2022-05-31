@@ -54,6 +54,17 @@
     height: 174px;
 }
 
+.galeria__imagen-background {
+    display: flex;
+    justify-content: end;
+}
+
+.galeria__imagen-background___icono {
+    display: hide;
+    padding-right: 1rem;
+    color: #FFFFFF; 
+}
+
 .galeria__productos___nombre {
     font-family: 'Raleway';
     font-style: normal;
