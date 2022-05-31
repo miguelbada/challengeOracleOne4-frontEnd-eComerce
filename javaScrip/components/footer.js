@@ -19,11 +19,12 @@ class Footer extends HTMLElement {
                         </ul>
                     </div>
                     <div class="info__informacion___formulario">
-                        <form class="info__formulario">
-                            <label for="nombre" class="galeria__productos___destacado">Hable con nosotros</label>
-                            <input type="text" placeholder="Nombre" name="nombre" class="info__formulario___nombre">
-                            <input type="text" placeholder="Escribe tu mensaje" class="info__formulario___mensaje">
-                            <button class="banner__btn">Enviar mensaje</button>
+                        <form class="info__formulario" action="https://formsubmit.co/ec2517e64e81ef5c893ac48d9b81836e" method="POST">
+                            <label for="name" class="galeria__productos___destacado">Hable con nosotros</label>
+                            <input type="text" placeholder="Nombre" name="name" class="info__formulario___nombre" required>
+                            <input type="hidden" name="_subject" value="New submission!">
+                            <textarea type="text" name="comments" cols="15" rows="5" placeholder="Escribe tu mensaje" class="info__formulario___mensaje"></textarea>
+                            <button type="submit" class="banner__btn">Enviar mensaje</button>
                         </form>
                     </div>
                 </section>

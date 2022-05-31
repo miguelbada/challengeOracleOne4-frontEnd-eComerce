@@ -61,8 +61,9 @@
 
 .galeria__imagen-background___icono {
     display: hide;
-    padding-right: 1rem;
-    color: #FFFFFF; 
+    padding-right: 2rem;
+    padding-top: 2rem;
+    color: #FFFFFF;
 }
 
 .galeria__productos___nombre {

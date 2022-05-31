@@ -39,7 +39,7 @@ async function verificarUsuario(emailUsuario) {
     } 
 }
 
-async function verificarLogin(emailVerificado, urlBack) {
+/* async function verificarLogin(emailVerificado, urlBack) {
     try {
         let usuarioVerificado = await verificarUsuario(emailVerificado);
         let usuarioLogin = usuarioVerificado[1];
@@ -58,4 +58,4 @@ async function verificarLogin(emailVerificado, urlBack) {
     }
     
 
-}
+} */
