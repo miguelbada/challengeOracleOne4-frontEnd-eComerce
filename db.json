@@ -148,7 +148,7 @@
   "usuarios": [
     {
       "email": "miguel@hotmail.com",
-      "password": "aaa",
+      "password": "123456aA",
       "id": 2
     }
   ]

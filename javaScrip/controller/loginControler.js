@@ -4,8 +4,6 @@ let loginName = document.querySelector('.login-name');
 let userAdmin = admin;
 let iconos = document.querySelector('.galeria__imagen-background___icono');
 
-console.log(iconos);
-
 function signIn(user) {
     $('.galeria__imagen-background___icono').hide();
 

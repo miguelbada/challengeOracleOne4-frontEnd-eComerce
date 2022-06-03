@@ -24,6 +24,7 @@ class Footer extends HTMLElement {
                             <input type="text" placeholder="Nombre" name="name" class="info__formulario___nombre" required>
                             <input type="hidden" name="_subject" value="New submission!">
                             <textarea type="text" name="comments" cols="15" rows="5" placeholder="Escribe tu mensaje" class="info__formulario___mensaje"></textarea>
+                            <input type="hidden" name="_next" value="https://miguelbada.github.io/challengeOracleOne4-frontEnd-eComerce/">
                             <button type="submit" class="banner__btn">Enviar mensaje</button>
                         </form>
                     </div>
