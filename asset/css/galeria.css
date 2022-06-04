@@ -52,6 +52,7 @@
 .galeria__imagen {
     width: 176px;
     height: 174px;
+    background-size: cover;
 }
 
 .galeria__imagen-background {

@@ -33,8 +33,8 @@
     <main>
         <div class="producto__container">
             <div class="galeria__imagen-background galeria__imagen" data-producto-img>   
-                <i class="fa fa-light fa-trash-can fa-xl galeria__imagen-background___icono"></i>
-                <i class="fa fa-light fa-pen fa-xl galeria__imagen-background___icono"></i>
+                <i class="fa fa-light fa-trash-can fa-xl galeria__imagen-background___icono" data-producto-delete></i>
+                <a href="#" data-producto-id><i class="fa fa-light fa-pen fa-xl galeria__imagen-background___icono"></i></a>
             </div>
             <div>
                 <h3 class="producto__nombre" data-producto-nombre></h3>
@@ -46,42 +46,7 @@
             <section class="galeria__container">
                 <h2 class="galeria__titulo">Productos similares</h2>
                 <div class="galeria__productos___relacionados" data-producto-relacionado>
-                    <!-- <ul>
-                        <img src="asset/img/star-wars/taza-star-wars.jpg" alt="taza-star-wars" class="galeria__imagen">
-                        <h3 class="galeria__productos___nombre">Producto XYZ</h3>
-                        <p class="galeria__productos___destacado">$ 60,00</p>
-                        <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
-                    <ul>
-                        <img src="asset/img/star-wars/cabeza-darth-vader.jpg" alt="cabeza de Darth Vader" class="galeria__imagen">
-                        <h3 class="galeria__productos___nombre">Producto XYZ</h3>
-                        <p class="galeria__productos___destacado">$ 60,00</p>
-                        <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
-                    <ul>
-                        <img src="asset/img/star-wars/yoda.jpg" alt="muñeco de Yoda" class="galeria__imagen">
-                        <h3 class="galeria__productos___nombre">Producto XYZ</h3>
-                        <p class="galeria__productos___destacado">$ 60,00</p>
-                        <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
-                    <ul>
-                        <img src="asset/img/star-wars/trooper.jpg" alt="muñeco de trooper" class="galeria__imagen">
-                        <h3 class="galeria__productos___nombre">Producto XYZ</h3>
-                        <p class="galeria__productos___destacado">$ 60,00</p>
-                        <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
-                    <ul class="galeria__hide-lista">
-                        <img src="asset/img/star-wars/baby-yoda.jpg" alt="muñeco de Baby Yoda" class="galeria__imagen">
-                        <h3 class="galeria__productos___nombre">Producto XYZ</h3>
-                        <p class="galeria__productos___destacado">$ 60,00</p>
-                        <a href="#" class="galeria__link">Ver producto</a>
-                    </ul>
-                    <ul class="galeria__hide-lista">
-                        <img src="asset/img/star-wars/dark-jedy.jpg" alt="muñeco de Dark Jedy" class="galeria__imagen">
-                        <h3 class="galeria__productos___nombre">Producto XYZ</h3>
-                        <p class="galeria__productos___destacado">$ 60,00</p>
-                        <a href="#" class="galeria__link">Ver producto</a>
-                    </ul> -->
+                   
                 </div>
             </section>
     </main>
@@ -93,5 +58,6 @@
     <script type="module" src="javaScrip/components/header.js"></script>
     <script type="module" src="javaScrip/components/footer.js"></script>
     <script type="module" src="javaScrip/controller/loginControler.js"></script>
+    <script type="module" src="javaScrip/controller/deleteProductoController.js"></script>
 </body>
 </html>

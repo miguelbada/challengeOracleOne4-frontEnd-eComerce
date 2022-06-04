@@ -7,14 +7,14 @@ let formulario = document.querySelector('[data-login-formulario]');
 formulario.addEventListener('submit', async e => {
     e.preventDefault();
 
-    let mess = isEmailValido(getEmail()) ? "" : "El email no es válido";
+    /* let mess = isEmailValido(getEmail()) ? "" : "El email no es válido";
     let messagePassword = isPasswordValido(getPassword()) ? "" : "La contraseña no es válida";
-   
+    */
     /* if(mess != "") {} */
    
    
-    getWarningEmail().textContent = mess;
-    getWarningPassword().textContent = messagePassword;
+  /*   getWarningEmail().textContent = mess;
+    getWarningPassword().textContent = messagePassword; */
 
     /* let promise = await Promise.all([validarEmail(getEmail()).catch(error => { return error; }), validarPassword(getPassword()).catch(error => { return error; })]).then(response => {
         console.log(response[0]);

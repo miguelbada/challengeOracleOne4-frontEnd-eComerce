@@ -36,4 +36,4 @@ function renderProductos(listaProductos) {
 getProductosController();
 
 
-export default renderProductos;
+export {renderProductos};
