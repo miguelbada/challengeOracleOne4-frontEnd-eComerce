@@ -17,7 +17,7 @@ inputFile.addEventListener("change", () => {
 
 let formulario = document.querySelector('.add-producto__form');
 
-formulario.addEventListener('submit',async evento => {
+formulario.addEventListener('submit', async evento => {
     evento.preventDefault();
     console.log(nombre());
     if(id != null) {
