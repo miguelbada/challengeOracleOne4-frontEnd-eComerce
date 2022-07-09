@@ -38,7 +38,18 @@
             </div>
         </div>
         <div class="galeria">
-            <section>
+            <section class="galeria_search">
+                <div class="galeria__info">
+                    <h1 class="galeria__titulo">Resultados de la busqueda:</h1>
+                    <div>
+                        <a href="listaProductos.html" class="galeria__link">ver todo</a>
+                        <i class="fa fa-light fa-arrow-right galeria__link-flecha"></i>
+                    </div>
+                </div>
+                <div class="galeria__productos galeria__productos___search">    
+                </div>
+            </section>
+            <section >
                 <div class="galeria__info">
                     <h1 class="galeria__titulo">Star Wars</h1>
                     <div>
@@ -191,5 +202,6 @@
     <script type="module" src="javaScrip/components/footer.js"></script>
     <script type="module" src="javaScrip/controller/loginControler.js"></script>
     <script type="module" src="javaScrip/regex.js"></script>
+    <script type="module" src="javaScrip/controller/searchProductController.js"></script>
 </body>
 </html>

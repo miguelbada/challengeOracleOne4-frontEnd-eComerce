@@ -5,6 +5,10 @@
     padding-right: 9.5rem;
 }
 
+.galeria_search {
+    display: none;
+}
+
 .galeria__titulo {
     font-family: 'Raleway';
     font-style: normal;

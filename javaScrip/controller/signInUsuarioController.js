@@ -1,74 +1,10 @@
 import getUsuarioService from '../service/getUsuarioService.js';
 import { regexEmail, regexPassword } from '../regex.js';
-import ValidacionError from '../validaciones/ValidacionError.js';
 
 let formulario = document.querySelector('[data-login-formulario]');
 
 formulario.addEventListener('submit', async e => {
     e.preventDefault();
-
-    /* let mess = isEmailValido(getEmail()) ? "" : "El email no es válido";
-    let messagePassword = isPasswordValido(getPassword()) ? "" : "La contraseña no es válida";
-    */
-    /* if(mess != "") {} */
-   
-   
-  /*   getWarningEmail().textContent = mess;
-    getWarningPassword().textContent = messagePassword; */
-
-    /* let promise = await Promise.all([validarEmail(getEmail()).catch(error => { return error; }), validarPassword(getPassword()).catch(error => { return error; })]).then(response => {
-        console.log(response[0]);
-        console.log(response[1]);
-    }); */
-    
-    /* promise.then(response => console.log(response)); */
-    /* try {
-        let response = await promise;
-    } catch (error) {  
-        console.log(error);
-        getWarning().textContent = error.message;
-    } */
-    /* .then((partes) => {
-        let panA = partes[0];
-        let carneCocida = partes[1];
-
-        return [panA, carneCocida];
-    })
-    .catch(error => {
-        let email = error[0];
-        let password = error[1]
-        
-        let warning = getWarning();
-        alert(error.message);
-        warning.textContent = error.message;
-        return [email, password];
-    }); */
-
-    /* validarEmail(getEmail()).then(() => validarPassword(getPassword())).catch(error => {
-        let warning = getWarning();
-        console.log(error + "pass1");
-        warning.textContent = error.message;
-    }); */
-
-    /* Promise.all([validarEmail(getEmail()), validarPassword(getPassword(getPassword()))]).then(response => console.log(response)); */
-
-   
-
-    /* try {
-        validarEmail(getEmail());
-    } catch (error) {
-        let warning = getWarning();
-
-        warning.textContent = error.message;
-    }
-
-    try {
-        validarPassword(getPassword());
-    } catch (error) {
-        let warning = getWarning();
-        
-        warning.textContent = error.message;
-    } */
     
     let usuarioVerificado = await verificarUsuario(getEmail());
     let usuarioLogin = usuarioVerificado[1];
@@ -80,10 +16,12 @@ formulario.addEventListener('submit', async e => {
             localStorage.setItem('usuario', JSON.stringify(usuario));
             alert("Bienvenido " + getEmail());
             window.location.replace(urlActual);
+        } else {
+            alert("El usuario o la contraseña es incorrecta");
         }
 });
 
-function validarEmail(email) {
+/* function validarEmail(email) {
     console.log(getEmail());
     console.log(regexEmail.test(getEmail()));
     let message = "";
@@ -110,29 +48,6 @@ function validarPassword(pass) {
     console.log(message);
 
     return message;
-}
-
-/* function validarEmail(email) {
-
-    return new Promise((resolve, reject) => {
-        if(isEmailValido(email)) {
-            resolve('Email validado');
-        } else {
-            throw new ValidacionError("El email no es válido");
-            reject("El email no es válido");
-        }
-    });
-}
-
-function validarPassword(pass) {
-    return new Promise((resolve, reject) => {
-        if(isPasswordValido(pass)) {
-            resolve('Contraseña validada');
-        } else {
-            reject("La contraseña no es válida");
-            throw new ValidacionError("La contraseña no es válida");
-        }
-    });
 } */
 
 function isEmailValido(text) {
@@ -151,13 +66,13 @@ function getPassword() {
     return document.querySelector('[data-login-password]').value;
 }
 
-function getWarningEmail() {
+/* function getWarningEmail() {
     return document.querySelector('.warningEmail');
 }
 
 function getWarningPassword() {
     return document.querySelector('.warningPassword');
-}
+} */
 
 async function verificarUsuario(emailUsuario) {
     try {
